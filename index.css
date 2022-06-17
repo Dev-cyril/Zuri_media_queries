@@ -1,0 +1,158 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 55, 5, 0.76);
+    background-image: url(images/bg-intro-desktop.png);
+    font-family: 'Poppins';
+    font-weight: 400, 500, 600, 700;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.text{
+    height: 400px;
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+.info{
+    height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+}
+input{
+    height: 40px;
+    width: 90%;
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.errMsg{
+    display: none;
+    font-weight: bold;
+
+}
+p > strong{
+    font-size: 13px;
+}
+.butt{
+    background-color: green;
+    text-align: center;
+    width: 91%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+.details{
+    text-align: center;
+    height: fit-content;
+    width: 80%;
+    border-radius: 2%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.heading{
+    height: 40px;
+    width: 84%;
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 3%;
+}
+small{
+    text-align: justify;
+    font-size: medium;
+}
+.butt:hover{
+    background-color: rgba(0, 128, 0, 0.72);
+}
+.cont > p{
+    font-size: small;
+    text-align: center;
+    color: rgb(179, 179, 172);
+}
+/* input:not(:focus):not(:placeholder-shown):invalid ~ .errMsg{
+    display: block;
+    color: red;
+    padding-right: 20px;
+} */
+.butt:hover ~ input:invalid{
+    border-color: red;
+    background: url(./images/icon-error.svg) no-repeat 95% 50%;
+}
+.butt:hover ~ input:not(:valid) ~ .errMsg{
+    display: block;
+    color: red;
+    padding-right: 40px;
+    font-size: small;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+@media (max-width:375px) {
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 55, 5, 0.76);
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        gap: 10px;
+    }
+    .text{
+        height: 300px;
+        width: 90%;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 90%;
+        padding: 30px 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+    small{
+        font-size: large;
+    }
+    .text-div{
+        width: 60%;
+        line-height: 30px;
+    }
+    .cont > p{
+        font-size: smaller;
+        text-align: center;
+        color: rgb(122, 122, 119);
+        padding: 0 5% 7% 7%;
+    }
+}
