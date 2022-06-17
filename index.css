@@ -2,7 +2,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgba(255, 55, 5, 0.76);
-    background-image: url(images/bg-intro-desktop.png);
+    background-image: url(bg-intro-desktop.png);
     font-family: 'Poppins';
     font-weight: 400, 500, 600, 700;
 }
@@ -96,7 +96,7 @@ small{
 } */
 .butt:hover ~ input:invalid{
     border-color: red;
-    background: url(./images/icon-error.svg) no-repeat 95% 50%;
+    background: url(icon-error.svg) no-repeat 95% 50%;
 }
 .butt:hover ~ input:not(:valid) ~ .errMsg{
     display: block;
@@ -112,7 +112,7 @@ small{
         height: 100%;
         width: 100%;
         background-color: rgba(255, 55, 5, 0.76);
-        background-image: url(./images/bg-intro-mobile.png);
+        background-image: url(bg-intro-mobile.png);
     }
     .container{
         display: flex;
